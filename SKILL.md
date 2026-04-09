@@ -47,8 +47,8 @@ Q1: Remove this instruction — do the model's analysis STEPS change?
 |- Only wording changes -> RPL-1 (Role-Playing)
 +- Behavior changes ->
     Q2: Does it tell HOW to do something, or WHAT attitude to have?
-    |- Attitude/willingness -> RPL-2 (Direction)
-    +- Concrete steps -> RPL-3 (Reasoning Chain)
+    |- Attitude/willingness -> RPL-2 (Thinking Framework)
+    +- Concrete steps -> RPL-3 (Chain Reasoning)
 ```
 
 Edge case: instruction with both stance AND concrete steps -> RPL-3.

@@ -15,7 +15,7 @@
 **Skill Check** 用 RPL（Reasoning Path Levels）分析你的 Skill 每條指令的品質等級，<br>
 告訴你哪些在起作用，哪些只是裝飾。
 
-[安裝](#安裝) · [使用](#使用) · [RPL 是什麼](#rpl-是什麼) · [輸出範例](#輸出範例) · [English](#english)
+[安裝](#安裝) · [使用](#使用) · [RPL 是什麼](#rpl-是什麼) · [輸出範例](#輸出範例) · [English](README_EN.md)
 
 </div>
 
@@ -154,44 +154,6 @@ skill-check/
 └── examples/
     └── sample-output.md    # 輸出範例
 ```
-
----
-
-<a name="english"></a>
-
-## English
-
-### What is this?
-
-**Skill Check** analyzes your Claude Code skills using RPL (Reasoning Path Levels) — a framework that classifies each instruction by how deeply it actually changes AI reasoning.
-
-- **RPL-1 (Role-Playing)**: "You are an expert" → AI uses the word "expert" more. Reasoning unchanged.
-- **RPL-2 (Thinking Framework)**: "Use first principles" → AI knows the direction but picks a different path each time.
-- **RPL-3 (Chain Reasoning)**: "1. List assumptions → 2. Find evidence for each → 3. Conclude from verified only" → AI is forced to follow the chain. Stable output.
-
-Most skills are full of RPL-1 and RPL-2. That's why AI performance is inconsistent. Upgrading key instructions to RPL-3 makes it stable.
-
-### Install
-
-```bash
-git clone https://github.com/gannasong/skill-check ~/.claude/skills/skill-check
-```
-
-### Use
-
-```
-/skill-check path/to/your/SKILL.md
-```
-
-Two modes: **Analyze** (distribution report + verdict) and **Optimize** (analysis + upgrade guidance).
-
-### Verdict Scale
-
-| Verdict | Criteria |
-|---------|----------|
-| STRONG | RPL-1 = 0%, RPL-3 >= 50%, no weak RPL-3 |
-| ADEQUATE | RPL-1 <= 10%, RPL-3 >= 30% |
-| WEAK | RPL-1 > 10% or RPL-3 < 30% |
 
 ---
 
